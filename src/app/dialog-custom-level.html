@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Custom Level</h1>
+<div mat-dialog-content>
+	<mat-form-field>
+		<input matInput type="number" placeholder="Columns" [(ngModel)]="data.cols">
+		<input matInput type="number" placeholder="Rows" [(ngModel)]="data.rows">
+		<input matInput type="number" placeholder="Mines" [(ngModel)]="data.mineNumber">
+	</mat-form-field>
+</div>
+<div mat-dialog-actions>
+	<button mat-button (click)="onNoClick()">Cancel</button>
+	<button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok</button>
+</div>

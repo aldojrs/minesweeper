@@ -1,0 +1,7 @@
+cell {
+    display: table-cell; 
+}
+
+div  {
+   display: table-row;
+}

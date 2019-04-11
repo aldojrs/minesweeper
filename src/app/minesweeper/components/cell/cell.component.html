@@ -1,0 +1,5 @@
+<button [ngClass]="{ 'revealed' : cell.revealed, 'flagged' : cell.flagged, 'mine' : cell.mine, 'cleaned' : cell.cleaned }" 
+    [ngStyle]="textStyle"
+    (click)="handleReveal()" 
+    (contextmenu)="handleFlag()">{{ cell.revealed ? cell.content : '' }}
+</button>

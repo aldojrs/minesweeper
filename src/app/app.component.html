@@ -1,0 +1,26 @@
+<div>
+	<mat-toolbar color="primary">
+
+		<button mat-flat-button color="primary" [matMenuTriggerFor]="menu">MENU</button>
+
+		<mat-menu #menu="matMenu">
+			<button mat-menu-item [matMenuTriggerFor]="levels">Levels</button>
+		</mat-menu>
+
+		<mat-menu #levels="matMenu">
+			<button mat-menu-item (click)="easy()">Easy</button>
+			<button mat-menu-item (click)="medium()">Medium</button>
+			<button mat-menu-item (click)="hard()">Hard</button>
+			<button mat-menu-item (click)="openCustomDialog()">Custom</button>
+		</mat-menu>
+
+	</mat-toolbar>
+</div>
+
+<br>
+
+<div class="container">
+	<label style="margin-left: 50px">{{level}}</label>
+</div>
+
+<board [board]="board"></board>

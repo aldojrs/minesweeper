@@ -1,0 +1,40 @@
+div {
+    border-width: 2px;
+    border-style: solid;
+    border-color:  grey white white grey;
+    height: 50px;
+    margin-bottom: 10px;
+    position: relative;
+    text-align: center;
+}
+
+div span {
+    position: absolute;   
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: monospace;
+    font-size: 1.8em;
+    background: grey;
+    color: firebrick;
+    padding: 3px;
+}
+
+div span {
+    width: 35px;
+}
+
+div span:first-of-type {
+    left: 20px;
+}
+
+div span:last-of-type {
+    right: 20px;
+}
+
+button {
+    width: 35px;
+    height: 35px;
+    margin: 7px;
+    font-size: 0.9em;
+}
+
